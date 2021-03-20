@@ -1,0 +1,70 @@
+def main():
+    # a_str e b_str guardam strings
+    a_str = input("Digite o primeiro numero: ")
+    b_str = input("Digite o segundo numero: ")
+
+    # a_int e b_int guardam inteiros
+    a_int = int(a_str) # converte string/texto para inteiro
+    b_int = int(b_str) # converte string/texto para inteiro
+
+    # calcule a soma entre valores que são números inteiros
+    soma = a_int + b_int
+
+    # imprima a soma
+    print("A soma de", a_int, "+", b_int, "eh igual a", soma)
+
+main()
+
+
+x = int(input("Por favor, entre com o número de segundos que deseja converter:"))
+dias = x//86400
+restoDias = x%86400
+horas = x//3600
+minutos = x//3600
+segundos = x%60
+print(dias, "dias", horas, "horas", minutos, "minutos", "e", segundos, "segundos")
+
+
+x = float(input("Por favor, entre com o número de segundos que deseja converter:"))
+dias = x//86400
+restoDias = x%6400
+horas = restoDias//83600
+restoHoras = restoDias%3600
+minutos = restoHoras//60
+print(dias, "dias", horas, "horas", minutos, "minutos")
+
+
+x = 10
+y = 15
+z = 25
+print(x == z - y and z != y - x or not y != z - x)
+
+
+idade = 18
+if (idade < 18): 
+  print ("Não pode tirar carteira de habilitação")
+else: 
+  print ("Pode tirar a carteira de habilitação")
+  
+  
+
+a = 0
+b = 2
+c = 1
+
+if (a > 0):
+    if (b > 0):
+        print ("Tudo ok para decolagem!")
+    else:
+        print ("Tanque principal vazio; voando com combustível reserva!")
+else:
+    if (c > 0):
+        print ("Foguete não tem piloto, mas há outros foguetes disponíveis!")
+        
+        
+x=int(input("digite um número inteiro:"))
+resto=x%2
+if resto == 0:
+   print("par")
+else:
+   print("impar")
